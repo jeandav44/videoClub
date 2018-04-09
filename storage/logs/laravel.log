@@ -1,0 +1,15 @@
+[2018-04-09 07:29:50] local.ERROR: Command "route_list" is not defined.
+
+Did you mean this?
+    route:list {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"route_list\" is not defined.
+
+Did you mean this?
+    route:list at /var/www/html/blog/vendor/symfony/console/Application.php:618)
+[stacktrace]
+#0 /var/www/html/blog/vendor/symfony/console/Application.php(229): Symfony\\Component\\Console\\Application->find('route_list')
+#1 /var/www/html/blog/vendor/symfony/console/Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Console/Application.php(88): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(121): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /var/www/html/blog/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
